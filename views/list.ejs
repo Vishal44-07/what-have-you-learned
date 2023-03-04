@@ -1,0 +1,23 @@
+<%- include('header'); -%>
+   
+    <div id="first-div">
+        <h1>
+            <%= listTitle %>
+        </h1>
+
+        <% for (var i=0; i < newaddeditems.length; i++){ %>
+            <p>
+                <%= newaddeditems[i] %>
+            </p>
+            <% } %>
+
+
+
+                <div id="second-div">
+                    <form action="/" method="post">
+                        <input name="newitem" type="text">
+                        <button type="submit" name="list" value=<%=listTitle %>>Add</button>
+                    </form>
+                </div>
+    </div>
+    <%- include('footer'); -%>
